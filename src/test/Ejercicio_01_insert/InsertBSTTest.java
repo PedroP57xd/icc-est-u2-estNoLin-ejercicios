@@ -22,7 +22,7 @@ public class InsertBSTTest {
 
         // Insertamos los valores en el BST
         // 3, 7, 2, 4, 6, 8 menos la raiz
-        int[] values = { 3, 7, 2, 4, 6, 8 };
+        int[] values = { 3, 7, 2, 4, 6, 8 };zz
         for (int value : values) {
             root = bstInsertion.insert(root, value);
         }
