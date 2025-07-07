@@ -1,3 +1,4 @@
+<details>
 # Estructuras No Lineales – Ejercicios Árboles
 
 Este proyecto contiene la solución a cuatro ejercicios prácticos sobre estructuras de datos tipo árbol binario, como parte del aprendizaje de estructuras no lineales en Java. Cada ejercicio se encuentra organizado en su propia carpeta, siguiendo la convención de paquetes y buenas prácticas.
@@ -136,7 +137,90 @@ Calcula la profundidad máxima de un árbol binario (la longitud del camino más
 **Output esperado:** `4`
 
 ---
+</details>
 
+# Estructuras No Lineales – Ejercicios Árboles  
+📌 *Información General*  
+- *Título:* Ejercicios de Árboles Binarios  
+- *Tema:* Estructuras No Lineales  
+- *Objetivo:* Implementar operaciones sobre árboles binarios  
+- *Desarrolladores:* Pedro Panjón
+- *Fecha:* 06/07/2025
+
+🛠 *Descripción*  
+Este proyecto implementa diferentes operaciones sobre árboles binarios, utilizando estructuras y algoritmos fundamentales de las estructuras de datos no lineales.
+
+📘 *Descripción de Ejercicios*  
+
+### 🟩 Ejercicio 01 – Insertar en Árbol Binario de Búsqueda (BST)  
+🔧 **Clase:** `BinarySearchTree`  
+📌 **Descripción:**  
+Este ejercicio implementa un árbol binario de búsqueda (BST) y permite insertar nodos respetando las reglas del BST:  
+- Los valores menores al nodo van a la izquierda.  
+- Los valores mayores van a la derecha.  
+
+🧠 **Lógica usada:**  
+Se utiliza recursión para encontrar la posición correcta donde insertar un nuevo nodo, comparando su valor con el nodo actual.
+
+📥 **Entrada:** Número entero a insertar.  
+📤 **Salida:** Árbol binario actualizado.
+
+---
+
+### 🟩 Ejercicio 02 – Invertir un Árbol Binario  
+🔧 **Clase:** `InvertBinaryTree`  
+📌 **Descripción:**  
+Invierte un árbol binario transformándolo en su imagen en espejo, intercambiando los hijos izquierdo y derecho de cada nodo.
+
+🧠 **Lógica usada:**  
+Se utiliza una función recursiva que:  
+- Guarda el hijo izquierdo en una variable temporal.  
+- Llama recursivamente al hijo derecho y lo asigna al hijo izquierdo.  
+- Asigna el temporal (original izquierdo) como hijo derecho.  
+
+📥 **Entrada:** Raíz del árbol binario.  
+📤 **Salida:** Árbol binario invertido.
+
+---
+
+### 🟩 Ejercicio 03 – Listar Niveles del Árbol (BFS)  
+🔧 **Clase:** `ListLevels`  
+📌 **Descripción:**  
+Este ejercicio recorre un árbol binario por niveles (BFS – Breadth First Search) y agrupa los valores de cada nivel en una lista enlazada.
+
+🧠 **Lógica usada:**  
+- Se usa una cola (`Queue`) para mantener el orden del recorrido.  
+- En cada iteración se recorre un nivel completo y se guarda en una `LinkedList`.  
+- Cada nivel se agrega a una lista principal de niveles.  
+
+📥 **Entrada:** Árbol binario.  
+📤 **Salida:** Lista de niveles con los valores de cada nodo.
+
+---
+
+### 🟩 Ejercicio 04 – Calcular Profundidad Máxima  
+🔧 **Clase:** `Depth`  
+📌 **Descripción:**  
+Calcula la profundidad máxima de un árbol binario, es decir, cuántos niveles tiene el árbol desde la raíz hasta la hoja más profunda.
+
+🧠 **Lógica usada:**  
+Función recursiva que:  
+- Retorna 0 si el nodo es nulo.  
+- Calcula la profundidad del subárbol izquierdo y derecho.  
+- Retorna el máximo de ambas + 1 (nivel actual).  
+
+📥 **Entrada:** Raíz del árbol binario.  
+📤 **Salida:** Número entero representando la profundidad.
+
+🧪 **Prueba:**  
+El archivo `DepthTest` incluye una prueba automatizada con `JUnit` que verifica que la profundidad retornada es correcta en un árbol de ejemplo.
+
+---
+
+
+
+
+<details>
 ## Indicaciones Generales
 
 * Lee cuidadosamente el enunciado de cada ejercicio.
@@ -185,3 +269,4 @@ Para contribuir a este proyecto, por favor crea un fork y envía una solicitud d
 
 - [PABLO TORRES] - Desarrollo inicial
 
+</details>
